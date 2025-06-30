@@ -17,6 +17,8 @@ const BlogComponent = () => {
   });
   const { blog_card_loader } = useLoader();
 
+  console.log(data);
+  
   return (
     <section className="w-[90%] m-auto">
       {isAuthorization ? <BlogSerch /> : <BlogHeader />}
